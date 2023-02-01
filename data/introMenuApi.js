@@ -13,14 +13,14 @@ export default
       icons:icons1,
       children:[
          {
-            link:'#!',
+            link:'https://play.google.com/store/apps/details?id=org.telegram.messenger',
             text:'Telegram для Android',
             icons:icons2,
             id:1,
          },
 
          {
-            link:'#!',
+            link:'https://apps.apple.com/app/telegram-messenger/id686449807',
             text:'Telegram для iOS',
             icons:icons3,
             id:2,

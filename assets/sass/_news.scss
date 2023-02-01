@@ -5,11 +5,11 @@
    z-index: 10;
    background-color:#f6f6f8;
    padding-bottom: 60px;
+   padding-top: 20px;
 
    &__top__fon{
       padding-top: 70px;
       background-color:$fon;
-      margin-bottom: 20px;
    }
 
    &__title__h2{
@@ -227,6 +227,12 @@
       align-items:center;
       justify-content: center;
    }
+
+   &__active{
+      border: 1px solid #337ab7;
+      background-color: #eff5fa;
+      overflow: hidden;
+   }
 }
 
 // pagination end
@@ -236,6 +242,8 @@
 
 .newsIn{
    position: relative;
+   padding-top: 20px;
+   margin-bottom: 30px;
 
    &__bootom__text{
       @include fontAll(16px,400,$text);
@@ -244,6 +252,11 @@
       strong,b,h1,h2,h3,h4,h5,h6,em{
          font-size: 100%;
          font-weight: 500;
+      }
+
+      a{
+         color:$fon;
+         font-size: 100%;
       }
    }
 
@@ -270,6 +283,7 @@
       @include fontAll(24px,500,$title);
       line-height: 135%;
       margin-bottom: 10px;
+      margin-top: 20px;
    }
 
    &__title__h2{
@@ -296,8 +310,41 @@
    }
 
    &__bootom__list{
-      li{
-         margin-bottom: 30px;
+      li + li{
+         margin-top: 30px;
+      }
+   }
+
+   &__list{
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: auto 240px;
+      align-items: start;
+   }
+
+   // ---------------
+
+   &__aside__link{
+      @include fontAll(16px,400,#33334b);
+      line-height: 140%;
+      margin-bottom: 8px;
+
+      max-height: 40px;
+      -webkit-line-clamp: 2;
+      position: relative;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+   }
+
+   &__aside__menu{
+      display: flex;
+      align-items:flex-start;
+      flex-direction: column;
+      li+li{
+         margin-top: 10px;
       }
    }
 }
@@ -340,6 +387,13 @@
 
    .newsIn__title__h3{
       font-size: 20px;
+   }
+
+   .newsIn__list{
+      grid-template-columns: 1fr;
+      li+li{
+         margin-top: 0px;
+      }
    }
 }
 

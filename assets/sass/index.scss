@@ -4,10 +4,21 @@
 @import '_webogram';
 @import '_news';
 
+.tgme_head_wrap{
+   display: none;
+}
+
+.tgme_background_wrap{
+   display: none;
+   script{
+      display: none !important;
+   }
+}
 
 body{
    font-family: "Gotham Pro", sans-serif;
    box-sizing: border-box;
+   background-color:transparent !important;
 }
 
 .container{

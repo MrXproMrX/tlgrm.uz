@@ -9,7 +9,7 @@
          </li>
 
          <li class="pagination__item" v-for="pageNumber in pages" :key="pageNumber">
-            <a href="#!" class="pagination__link" @click.prevent="paginate(pageNumber)">
+            <a href="#!" :class="{pagination__active: (page == pageNumber)}" class="pagination__link" @click.prevent="paginate(pageNumber)">
                {{pageNumber}}
             </a>
          </li>

@@ -163,17 +163,18 @@
    }
 
    &__menu__img{
-      @include fiximg(100%,175px,true);
+      @include fiximg(100%,175px,false);
       margin-bottom: 20px;
-      border-radius: 8px;
-      -webkit-border-radius: 8px;
-      -moz-border-radius: 8px;
-      -ms-border-radius: 8px;
-      -o-border-radius: 8px;
       overflow: hidden;
       img{
          max-height: 275px;
          object-position: center top;
+         border-radius: 8px;
+         -webkit-border-radius: 8px;
+         -moz-border-radius: 8px;
+         -ms-border-radius: 8px;
+         -o-border-radius: 8px;
+         width: fit-content;
       }
    }
 
