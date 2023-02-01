@@ -221,6 +221,10 @@
    .feature__menu__list {
       grid-gap: 20px;
    }
+
+   .feature__menu__img img{
+      width: 100%;
+   }
 }
 
 @media (max-width:900px){
