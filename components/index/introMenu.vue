@@ -18,9 +18,18 @@
             <section v-if="item.children" class="intro__none__cart">
                <ul class="intro__none__menu">
                   <li v-for="cartItem in item.children" :key="cartItem.id">
-                     <nuxt-link :to="cartItem.link" class="intro__none__link">
+                     <a :href="cartItem.link" target="_blank" class="intro__none__link">
                         <span v-html="cartItem.icons"></span>
                         {{ cartItem.text }}
+                     </a>
+                  </li>
+
+                  <li>
+                     <nuxt-link to="/tabpanel" class="intro__none__link">
+                        <span>
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"/></svg>
+                        </span>
+                        Все приложения
                      </nuxt-link>
                   </li>
                </ul>

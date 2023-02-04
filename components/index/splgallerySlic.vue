@@ -16,9 +16,9 @@
                   <div v-if="item.icons">
                      <ul class="splgallery__item__menu">
                         <li v-for="imgs in item.icons" :key="imgs.icons" class="splgallery__menu__item__img">
-                           <nuxt-link :to="imgs.link">
+                           <a :href="imgs.link" target="_blank">
                               <img :src="imgs.icons" :alt="imgs.icons">
-                           </nuxt-link>
+                           </a>
                         </li>
                      </ul>
                   </div>

@@ -16,9 +16,9 @@
 
                <introMenuVue></introMenuVue>
 
-               <nuxt-link to="#!" class="intro__bottom__link">
+               <a href="https://dl.tlgrm.click/desktop/win_portable" target="_blank" class="intro__bottom__link">
                   Доступна также портативная версия
-               </nuxt-link>
+               </a>
             </div>
          </div>
 

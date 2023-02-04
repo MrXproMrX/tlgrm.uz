@@ -7,7 +7,7 @@ export default
 
    {
       text:'Пресса о Telegram',
-      link:'#!'
+      link:'/press'
    },
 
    {

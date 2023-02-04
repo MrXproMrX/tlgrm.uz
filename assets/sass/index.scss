@@ -4,6 +4,8 @@
 @import '_webogram';
 @import '_news';
 @import '_sticker';
+@import '_tabpanel';
+@import '_press';
 
 body{
    font-family: "Gotham Pro", sans-serif;
@@ -555,7 +557,9 @@ body{
    .feature__cart,
    .news__cart,
    .newsIn__cart,
-   .sticker__cart{
+   .sticker__cart,
+   .tabpanel__cart,
+   .press__cart{
       margin-left: 30px;
       margin-right: 30px;
    }

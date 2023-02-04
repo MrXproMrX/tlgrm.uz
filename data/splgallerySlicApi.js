@@ -19,17 +19,17 @@ export default
       icons:[
          {
             icons:icons1,
-            link:'#!'
+            link:'https://play.google.com/store/apps/details?id=org.telegram.messenger'
          },
 
          {
             icons:icons2,
-            link:'#!'
+            link:'https://apps.apple.com/app/telegram-messenger/id686449807'
          },
 
          {
             icons:icons3,
-            link:'#!'
+            link:'https://www.microsoft.com/nl-nl/p/telegram-messenger/9wzdncrdzhs0?rtc=1'
          }
       ]
    },

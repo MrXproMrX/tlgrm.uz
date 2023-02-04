@@ -27,6 +27,6 @@ export default
 
    {
       text:'Скачать',
-      link:'#!'
+      link:'/tabpanel'
    },
 ]
