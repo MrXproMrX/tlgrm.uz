@@ -3,22 +3,11 @@
 @import './files/mixins';
 @import '_webogram';
 @import '_news';
-
-.tgme_head_wrap{
-   display: none;
-}
-
-.tgme_background_wrap{
-   display: none;
-   script{
-      display: none !important;
-   }
-}
+@import '_sticker';
 
 body{
    font-family: "Gotham Pro", sans-serif;
    box-sizing: border-box;
-   background-color:transparent !important;
 }
 
 .container{
@@ -565,7 +554,8 @@ body{
    .welcomeIcons__cart,
    .feature__cart,
    .news__cart,
-   .newsIn__cart{
+   .newsIn__cart,
+   .sticker__cart{
       margin-left: 30px;
       margin-right: 30px;
    }
