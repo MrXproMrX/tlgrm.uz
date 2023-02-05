@@ -17,12 +17,12 @@ export default
 
    {
       text:'Каналы',
-      link:'#!'
+      link:'/channels'
    },
 
    {
       text:'FAQ',
-      link:'#!'
+      link:'/faq'
    },
 
    {

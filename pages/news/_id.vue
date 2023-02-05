@@ -48,7 +48,6 @@
    </section>
 </template>
 
-
 <script>
 import newsListApi from '@/data/newsListApi';
 export default {

@@ -1,0 +1,60 @@
+// channels start
+
+.channels{
+   position: relative;
+   margin: 30px 0px;
+
+   &__list{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px;
+   }
+
+   &__item{
+      @include fiximg(100%,180px,true);
+      position: relative;
+      img{
+         position: absolute;
+         object-position: center top;
+         z-index: 1;
+      }
+   }
+
+   &__title__h3{
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      @include fontAll(24px,500,$link);
+      line-height: 135%;
+      padding: 20px 10px 10px 20px;
+      background-image: linear-gradient(transparent 0px, rgba(0, 0, 0, 0.9));
+   }
+}
+
+// channels end
+
+@media (max-width:1200px){
+   .channels__title__h3{
+      font-size: 22px;
+   }
+}
+
+@media (max-width:700px){
+   .channels__title__h3{
+      font-size: 20px;
+   }
+
+   .channels__list{
+      grid-template-columns: 1fr;
+   }
+}
+
+@media (max-width:400px){
+   .channels__item {
+      height: 140px;
+   }
+}

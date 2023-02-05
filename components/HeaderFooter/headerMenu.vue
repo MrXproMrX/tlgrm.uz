@@ -10,7 +10,7 @@
       </div>
 
       <ul class="header__menu" :class="{header__burger__start:headerBurger}">
-         <li v-for="(item,index) in headerMenuApi" :key="index">
+         <li v-for="(item,index) in headerMenuApi" :key="index" @click="headerBurger = false">
             <nuxt-link active-class="header__active__link" :to="item.link" class="header__menu__link">{{ item.text }}</nuxt-link>
          </li>
       </ul>

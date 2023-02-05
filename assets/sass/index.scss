@@ -6,6 +6,8 @@
 @import '_sticker';
 @import '_tabpanel';
 @import '_press';
+@import '_channels';
+@import '_faq';
 
 body{
    font-family: "Gotham Pro", sans-serif;
@@ -559,7 +561,10 @@ body{
    .newsIn__cart,
    .sticker__cart,
    .tabpanel__cart,
-   .press__cart{
+   .press__cart,
+   .channels__cart,
+   .faq_stickers__cart,
+   .faq__cart{
       margin-left: 30px;
       margin-right: 30px;
    }

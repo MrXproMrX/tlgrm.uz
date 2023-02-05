@@ -18,7 +18,7 @@
 
                <div class="footer__cart__list">
                   <ul class="footer__menu">
-                     <li v-for="(item,i) in headerMenuApi" :key="i">
+                     <li v-for="(item,i) in headerMenuApi" :key="i" >
                         <nuxt-link active-class="footer__active__link" :to="item.link" class="footer__menu__link">{{ item.text }}</nuxt-link>
                      </li>
                   </ul>

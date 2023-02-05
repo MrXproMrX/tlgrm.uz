@@ -1,0 +1,298 @@
+// faq start
+
+.faq{
+   position: relative;
+   margin: 30px 0px;
+
+   &__list{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 30px;
+   }
+
+   &__item{
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgb(0 0 0 / 10%);
+      color: #444;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 14px 20px 12px;
+      a{
+         display: flex;
+         align-items: flex-start;
+         justify-content: space-between;
+         flex-direction: column;
+
+         span{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            background-color: #263c4d;
+            @include fontAll(20px,600,$link);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            margin-bottom: 15px;
+         }
+      }
+   }
+
+   &__title__h3{
+      @include fontAll(20px,600,$title);
+      line-height: 135%;
+      margin-bottom: 10px;
+   }
+
+   &__title__cart{
+      line-height: 145%;
+      border-bottom: 2px solid $title;
+      display: inline-block;
+      margin-bottom: 20px;
+   }
+
+   &__text{
+      @include fontAll(14px,400,$text);
+      line-height: 140%;
+
+      max-height: 40px;
+      -webkit-line-clamp: 2;
+      position: relative;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+   }
+
+   &__title__h5{
+      @include fontAll(14px,500,#bbb);
+      line-height: 140%;
+      margin-top: 5px;
+   }
+
+   &__cart__list{
+      margin-top: 30px;
+
+      .faq__cart__menu + .faq__cart__menu{
+         margin-top: 15px;
+      }
+   }
+
+   &__cart__title__h3{
+      @include fontAll(24px,500,$title);
+      line-height: 145%;
+      border-bottom: 2px solid $title;
+      display: inline-block;
+      margin-bottom: 15px;
+   }
+
+   &__cart__menu__link{
+      @include fontAll(16px,500,$fon);
+      line-height: 135%;
+      display: flex;
+      align-items:flex-start;
+      grid-gap: 5px;
+      span{
+         color:#939ea6;
+      }
+   }
+
+   &__cart__menu{
+      display: flex;
+      align-items:flex-start;
+      flex-direction: column;
+      grid-gap: 10px;
+      margin-bottom: 20px;
+   }
+
+   &__cart__item__list{
+      .faq__cart__item + .faq__cart__item{
+         margin-top: 20px;
+      }
+   }
+}
+
+// faq end
+
+
+// faq_stickers start
+
+.faq_stickers{
+   position: relative;
+   margin: 30px 0;
+
+   &__menu__link{
+      @include fontAll(16px,500,$fon);
+      line-height: 135%;
+   }
+
+   &__menu{
+      display: flex;
+      align-items:flex-start;
+      flex-direction: column;
+      grid-gap: 10px;
+      margin-bottom: 30px;
+   }
+
+   &__title__h3{
+      @include fontAll(24px,500,$title);
+      margin-bottom: 10px;
+   }
+
+   &__text{
+      @include fontAll(16px,400,$text);
+      line-height: 145%;
+
+      strong,b,h1,h2,h3,h4,h5,h6,em{
+         font-size: 100%;
+         font-weight: 500;
+         color:$title;
+      }
+
+      a{
+         color:$fon;
+         font-size: 100%;
+      }
+
+      p+p{
+         margin-top: 15px;
+      }
+
+      span{
+         i{
+            color:$fon;
+            margin: 0px 5px;
+            font-size: 100%;
+         }
+      }
+
+      blockquote{
+         display: block;
+         border-left: 3px solid rgba(0,0,0,.1);
+         padding: 12px 12px 12px 16px;
+         box-sizing: border-box;
+         margin: 10px 0px;
+         width: 100%;
+         border-radius: 0 2px 2px 0;
+         -webkit-border-radius: 0 2px 2px 0;
+         -moz-border-radius: 0 2px 2px 0;
+         -ms-border-radius: 0 2px 2px 0;
+         -o-border-radius: 0 2px 2px 0;
+      }
+   }
+
+   &__list{
+      .faq_stickers__item + .faq_stickers__item{
+         margin-top: 30px;
+      }
+   }
+
+   &__item__list{
+      display: flex;
+      align-items:flex-start;
+      flex-direction: column;
+      grid-gap: 10px;
+      margin: 30px 0;
+
+      li{
+         padding-left: 20px;
+         position: relative;
+         &::before {
+            content: "";
+            display: inline-block;
+            background-color: $fon;
+            position: absolute;
+            top: 8px;
+            left: 0;
+            height: 7px;
+            width: 7px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+         }
+      }
+   }
+
+   &__channels__list{
+      display: flex;
+      align-items:center;
+      grid-gap: 30px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 20px;
+   }
+
+   &__channels__button{
+      @include fontAll(16px,600,#ddd);
+      line-height: 135%;
+      padding: 15px 0;
+      background-color:transparent;
+   }
+
+   &__active{
+      border-bottom: 2px solid $fon;
+      color:$fon;
+   }
+}
+
+// faq_stickers end
+
+
+@media (max-width:1200px){
+   .faq_stickers__title__h3,
+   .faq__cart__title__h3{
+      font-size: 22px;
+   }
+
+   .faq_stickers__item__list {
+      margin: 15px 0;
+   }
+
+   .faq__list{
+      grid-gap: 20px;
+   }
+}
+
+@media (max-width:800px){
+   .faq__list {
+      grid-template-columns: 1fr 1fr;
+   }
+}
+
+@media (max-width:650px){
+   .faq_stickers__title__h3,
+   .faq__cart__title__h3{
+      font-size: 20px;
+   }
+
+   .faq_stickers__list .faq_stickers__item + .faq_stickers__item {
+      margin-top: 20px;
+   }
+
+   .faq_stickers__item__list li {
+      padding-left: 15px;
+   }
+
+   .faq__cart__item__list .faq__cart__item + .faq__cart__item {
+      margin-top: 15px;
+   }
+
+   .faq__list{
+      grid-template-columns: 1fr;
+   }
+
+   .faq__cart__list {
+      margin-top: 20px;
+   }
+
+   .faq__title__h3{
+      grid-gap: 18px;
+   }
+}
