@@ -25,15 +25,42 @@
                   </li>
                </ul>
 
+               <!-- ----------tabsItem---------- -->
+
+               <div class="faq_stickers__channels" v-if="items.tabsItem">
+                  <ul class="faq_stickers__channels__list">
+                     <li v-for="(itemTab,i) in items.tabsItem" :key="i">
+                        <button
+                           @click="channels = itemTab.id"
+                           :class="{faq_stickers__active:(itemTab.id === channels)}"
+                           class="faq_stickers__channels__button">
+                           {{ itemTab.title }}
+                        </button>
+                     </li>
+                  </ul>
+
+                  <div v-for="(itemTab,i) in items.tabsItem" :key="i">
+                     <div class="faq_stickers__text" v-html="itemTab.text" v-if="channels == itemTab.id"></div>
+                  </div>
+               </div>
+
+               <!-- ----------tabsItem---------- -->
+
             </div>
          </div>
 
       </div>
+
    </div>
 </template>
 
 <script>
 export default {
-   props:['faqCarts']
+   props:['faqCarts'],
+   data(){
+      return{
+         channels:1
+      }
+   }
 }
 </script>

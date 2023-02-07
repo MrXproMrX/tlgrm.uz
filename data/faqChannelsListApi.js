@@ -12,17 +12,20 @@ export default
       tabsItem:[
          {
             title:'Android',
-            text:`<p>Нажмите на круглую кнопку с карандашом <span><i class="fa-solid fa-pen"></i></span>  в правом нижнем углу. Затем на  <span><i class="fas fa-bullhorn"></i></span>Создать канал.</p>`
+            text:`<p>Нажмите на круглую кнопку с карандашом <span><i class="fa-solid fa-pen"></i></span>  в правом нижнем углу. Затем на  <span><i class="fas fa-bullhorn"></i></span>Создать канал.</p>`,
+            id:1
          },
 
          {
             title:'iOS',
-            text:`<p>Нажмите на квадратную иконку  в правом верхнем углу. Затем на <span><i class="fas fa-bullhorn"></i></span>Создать канал.</p>`
+            text:`<p>Нажмите на квадратную иконку  в правом верхнем углу. Затем на <span><i class="fas fa-bullhorn"></i></span>Создать канал.</p>`,
+            id:2
          },
 
          {
             title:'Desktop',
-            text:`<p>Нажмите на иконку с тремя горизонтальными полосками <span><i class="fa-solid fa-bars"></i><span>  в левом верхнем углу. Затем на  <span><i class="fas fa-bullhorn"></i></span> Создать канал.</p>`
+            text:`<p>Нажмите на иконку с тремя горизонтальными полосками <span><i class="fa-solid fa-bars"></i><span>  в левом верхнем углу. Затем на  <span><i class="fas fa-bullhorn"></i></span> Создать канал.</p>`,
+            id:3
          }
       ]
    },

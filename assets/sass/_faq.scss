@@ -115,6 +115,91 @@
          margin-top: 20px;
       }
    }
+
+   // ------------------
+
+   &__delete__menu{
+      padding-left: 20px;
+   }
+
+   &__delete__item{
+      display: list-item;
+      list-style-type: decimal;
+      img{
+         max-height: 400px;
+         width: 100%;
+         object-fit: contain;
+         object-position: center center;
+      }
+   }
+
+   &__delete__list{
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      grid-gap: 20px;
+      margin: 20px 0;
+   }
+
+   &__error{
+      margin: 20px 0;
+      display: flex;
+      align-items:flex-start;
+      grid-gap: 20px;
+      flex-direction: column;
+   }
+
+   &__error__item{
+      border: 1px solid #e7e7e7;
+      background-color:$link;
+      padding: 20px 20px 20px 64px;
+      position: relative;
+   }
+
+   &__error__title{
+      &::before {
+         content: "";
+         position: absolute;
+         left: 30px;
+         display: block;
+         box-sizing: content-box;
+         height: 24px;
+         width: 24px;
+         background-image: url(../foto/erorr.svg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center center;
+     }
+   }
+
+   &__verification{
+      margin: 20px 0;
+   }
+
+   &__verification__img{
+      @include fiximg(100%,auto,false);
+      img{
+         max-width: 800px;
+         object-position: center center;
+      }
+   }
+
+   &__obhod__menu{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 20px;
+      align-items: center;
+      margin: 20px 0px;
+   }
+
+   &__obhod__menu__link{
+      display: inline-block;
+      padding: 20px 10px;
+      @include fontAll(14px,600,$link);
+      line-height: 100%;
+      text-align: center;
+      width: 100%;
+   }
 }
 
 // faq end
@@ -258,11 +343,27 @@
    .faq__list{
       grid-gap: 20px;
    }
+
+   .faq__error__item{
+      padding: 15px 15px 15px 40px;
+   }
+
+   .faq__error__title::before {
+      left: 5px;
+   }
 }
 
 @media (max-width:800px){
    .faq__list {
       grid-template-columns: 1fr 1fr;
+   }
+
+   .faq__delete__list{
+      flex-wrap: wrap;
+   }
+
+   .faq__obhod__menu{
+      grid-template-columns: repeat(2,1fr);
    }
 }
 
@@ -294,5 +395,10 @@
 
    .faq__title__h3{
       grid-gap: 18px;
+   }
+
+   .faq__obhod__menu{
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 15px;
    }
 }
