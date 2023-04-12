@@ -5,7 +5,9 @@
          <section class="container">
             <div class="faq_stickers__cart">
                <div class="news__cart__list">
-                  <h2 class="news__title__h2">Как обойти блокировку Телеграмм?</h2>
+                  <h2 class="news__title__h2">
+                     Как обойти блокировку Телеграмм?
+                  </h2>
                </div>
 
                <faqListVue :faqStickers="faqStickers"></faqListVue>
@@ -16,17 +18,17 @@
 </template>
 
 <script>
-import faqListVue from '@/components/faq/faqStickersList.vue';
-import faqObhodApi from '@/data/faqObhodApi';
+import faqListVue from "@/components/faq/faqStickersList.vue";
+import faqObhodApi from "@/data/faqObhodApi";
 export default {
-   data(){
-      return{
-         faqStickers:faqObhodApi
-      }
+   data() {
+      return {
+         faqStickers: faqObhodApi,
+      };
    },
 
-   components:{
-      faqListVue
-   }
-}
+   components: {
+      faqListVue,
+   },
+};
 </script>

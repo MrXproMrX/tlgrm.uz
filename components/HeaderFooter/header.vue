@@ -11,10 +11,10 @@
 </template>
 
 <script>
-import headerMenuVue from './headerMenu.vue'
+import headerMenuVue from "./headerMenu.vue";
 export default {
-  components:{
-   headerMenuVue
-  }
-}
+   components: {
+      headerMenuVue,
+   },
+};
 </script>

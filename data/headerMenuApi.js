@@ -1,32 +1,31 @@
-export default
-[
+export default [
    {
-      text:'Webogram',
-      link:'/webogram'
+      text: "Webogram",
+      link: "/webogram",
    },
 
    {
-      text:'Блог',
-      link:'/news'
+      text: "Блог",
+      link: "/news",
    },
 
    {
-      text:'Стикеры',
-      link:'/sticker'
+      text: "Стикеры",
+      link: "/sticker",
    },
 
    {
-      text:'Каналы',
-      link:'/channels'
+      text: "Каналы",
+      link: "/channels",
    },
 
    {
-      text:'FAQ',
-      link:'/faq'
+      text: "FAQ",
+      link: "/faq",
    },
 
    {
-      text:'Скачать',
-      link:'/tabpanel'
+      text: "Скачать",
+      link: "/tabpanel",
    },
-]
+];

@@ -5,7 +5,9 @@
          <section class="container">
             <div class="faq_stickers__cart">
                <div class="news__cart__list">
-                  <h2 class="news__title__h2">Почему я не могу отправить сообщение?</h2>
+                  <h2 class="news__title__h2">
+                     Почему я не могу отправить сообщение?
+                  </h2>
                </div>
 
                <faqListVue :faqStickers="faqStickers"></faqListVue>
@@ -16,17 +18,17 @@
 </template>
 
 <script>
-import faqListVue from '@/components/faq/faqStickersList.vue';
-import faqPochemuApi from '@/data/faqPochemuApi';
+import faqListVue from "@/components/faq/faqStickersList.vue";
+import faqPochemuApi from "@/data/faqPochemuApi";
 export default {
-   data(){
-      return{
-         faqStickers:faqPochemuApi
-      }
+   data() {
+      return {
+         faqStickers: faqPochemuApi,
+      };
    },
 
-   components:{
-      faqListVue
-   }
-}
+   components: {
+      faqListVue,
+   },
+};
 </script>

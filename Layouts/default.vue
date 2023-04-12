@@ -1,20 +1,20 @@
 <template>
    <section>
       <headerVue></headerVue>
-         <section>
-            <nuxt></nuxt>
-         </section>
+      <section>
+         <nuxt></nuxt>
+      </section>
       <footerVue></footerVue>
    </section>
 </template>
 
 <script>
-import headerVue from '@/components/HeaderFooter/header.vue';
-import footerVue from '@/components/HeaderFooter/footer.vue';
+import headerVue from "@/components/HeaderFooter/header.vue";
+import footerVue from "@/components/HeaderFooter/footer.vue";
 export default {
-   components:{
+   components: {
       headerVue,
-      footerVue
-   }
-}
+      footerVue,
+   },
+};
 </script>

@@ -16,17 +16,17 @@
 </template>
 
 <script>
-import faqListVue from '@/components/faq/faqStickersList.vue';
-import faqChannelsListApi from '@/data/faqChannelsListApi';
+import faqListVue from "@/components/faq/faqStickersList.vue";
+import faqChannelsListApi from "@/data/faqChannelsListApi";
 export default {
-   data(){
-      return{
-         faqStickers:faqChannelsListApi
-      }
+   data() {
+      return {
+         faqStickers: faqChannelsListApi,
+      };
    },
 
-   components:{
-      faqListVue
-   }
-}
+   components: {
+      faqListVue,
+   },
+};
 </script>

@@ -17,10 +17,13 @@
                   </li>
                </ul>
 
-               <h5 class="news__title__h5">{{ items.linkText }} <span><i class="fas fa-chevron-right"></i></span></h5>
+               <h5 class="news__title__h5">
+                  {{ items.linkText }}
+                  <span><i class="fas fa-chevron-right"></i></span>
+               </h5>
 
                <div class="news__imgs">
-                  <img :src="items.imgs" :alt="items.title">
+                  <img :src="items.imgs" :alt="items.title" />
                </div>
             </nuxt-link>
          </div>
@@ -30,6 +33,6 @@
 
 <script>
 export default {
-   props:['newsListApi']
-}
+   props: ["newsListApi"],
+};
 </script>

@@ -1,6 +1,6 @@
 <template>
    <div class="faq__list">
-      <div class="faq__item" v-for="(faqs,i) in faq" :key="i">
+      <div class="faq__item" v-for="(faqs, i) in faq" :key="i">
          <nuxt-link :to="faqs.link">
             <span v-html="faqs.icons"></span>
             <h3 class="faq__title__h3">{{ faqs.title }}</h3>
@@ -13,6 +13,6 @@
 
 <script>
 export default {
-   props:['faq']
-}
+   props: ["faq"],
+};
 </script>

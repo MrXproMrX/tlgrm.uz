@@ -17,22 +17,21 @@
 </template>
 
 <script>
-import faqListVue from '@/components/faq/faqList.vue';
-import faqPageApi from '@/data/faqPageApi';
-import faqCartListVue from '@/components/faq/faqCartList.vue';
-import faqCartApi from '@/data/faqCartApi';
+import faqListVue from "@/components/faq/faqList.vue";
+import faqPageApi from "@/data/faqPageApi";
+import faqCartListVue from "@/components/faq/faqCartList.vue";
+import faqCartApi from "@/data/faqCartApi";
 export default {
-
-   data(){
-      return{
-         faq:faqPageApi,
-         faqCarts:faqCartApi
-      }
+   data() {
+      return {
+         faq: faqPageApi,
+         faqCarts: faqCartApi,
+      };
    },
 
-   components:{
+   components: {
       faqListVue,
-      faqCartListVue
-   }
-}
+      faqCartListVue,
+   },
+};
 </script>

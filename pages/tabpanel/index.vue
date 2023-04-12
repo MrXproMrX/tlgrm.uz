@@ -9,31 +9,45 @@
                </div>
 
                <div class="tabpanel__text__cart">
-                  <p>Здесь представлены все существующие на текущий момент клиенты Telegram.</p>
+                  <p>
+                     Здесь представлены все существующие на текущий момент
+                     клиенты Telegram.
+                  </p>
                </div>
 
                <ul class="sticker__cart__item">
                   <li>
-                     <button class="sticker__buttom" @click="smartphonePage = true" :class="{sticker__active:(smartphonePage == true)}">
+                     <button
+                        class="sticker__buttom"
+                        @click="smartphonePage = true"
+                        :class="{ sticker__active: smartphonePage == true }"
+                     >
                         Для компьютера
                      </button>
                   </li>
 
                   <li>
-                     <button class="sticker__buttom" @click="smartphonePage = false" :class="{sticker__active:(smartphonePage == false)}">
+                     <button
+                        class="sticker__buttom"
+                        @click="smartphonePage = false"
+                        :class="{ sticker__active: smartphonePage == false }"
+                     >
                         Для смартфона
                      </button>
                   </li>
                </ul>
 
                <template v-if="smartphonePage">
-                  <tabpanelPageVue :tabpanelApps="tabpanelApps"></tabpanelPageVue>
+                  <tabpanelPageVue
+                     :tabpanelApps="tabpanelApps"
+                  ></tabpanelPageVue>
                </template>
 
                <template v-else>
-                  <smartphonePageVue :smartphone="smartphone"></smartphonePageVue>
+                  <smartphonePageVue
+                     :smartphone="smartphone"
+                  ></smartphonePageVue>
                </template>
-
             </div>
          </section>
       </div>
@@ -41,22 +55,22 @@
 </template>
 
 <script>
-import tabpanelAppsApi from '@/data/tabpanelAppsApi';
-import tabpanelPageVue from '@/components/tabpanel/tabpanelPage.vue';
-import smartphonePageVue from '@/components/tabpanel/smartphonePage.vue';
-import smartphoneApi from '@/data/smartphoneApi';
+import tabpanelAppsApi from "@/data/tabpanelAppsApi";
+import tabpanelPageVue from "@/components/tabpanel/tabpanelPage.vue";
+import smartphonePageVue from "@/components/tabpanel/smartphonePage.vue";
+import smartphoneApi from "@/data/smartphoneApi";
 export default {
-   data(){
-      return{
-         tabpanelApps:tabpanelAppsApi,
-         smartphone:smartphoneApi,
-         smartphonePage:true
-      }
+   data() {
+      return {
+         tabpanelApps: tabpanelAppsApi,
+         smartphone: smartphoneApi,
+         smartphonePage: true,
+      };
    },
 
-   components:{
+   components: {
       tabpanelPageVue,
-      smartphonePageVue
-   }
-}
+      smartphonePageVue,
+   },
+};
 </script>
